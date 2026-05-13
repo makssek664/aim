@@ -9,6 +9,7 @@
 body {
   background-color: black;
   color: var(--main-fg-color);
+  aspect-ratio: 1/1;
 }
 
 .content {
@@ -34,6 +35,7 @@ body {
 
   border-radius: 8px;
   box-shadow: #282828 10px 10px;
+  pointer-events: none;
 }
 
 .navbar-title {
@@ -111,7 +113,7 @@ body {
   padding: 20px;
 }
 
-@media(max-width:600px) {
+@media(max-width:960px) {
   .cards {
     grid-template-columns: repeat(2, 4fr);
     width: 600px;
@@ -119,7 +121,7 @@ body {
   }
 
   .card {
-    width: 160px;
+    width: 280px;
   }
 }
 
